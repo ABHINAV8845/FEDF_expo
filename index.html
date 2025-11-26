@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Quality Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>Air Quality Checker</h1>
+
+    <div class="search">
+      <select id="citySelect">
+        <option value="">Select a city</option>
+      </select>
+      <button id="searchBtn">Show Data</button>
+    </div>
+
+    <div id="alert" class="alert" style="display:none">
+      <h3>Air Quality Alert</h3>
+      <p id="alertMessage"></p>
+    </div>
+
+    <div id="status" class="muted"></div>
+
+    <div id="result" class="card" style="display:none">
+      <h2 id="resCity"></h2>
+      <p id="resDate"></p>
+      <p id="resTemp"></p>
+      <p id="resHumidity"></p>
+      <p id="resPM25"></p>
+      <p id="resNO2"></p>
+      <p id="resO3"></p>
+      <p id="resCO"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
